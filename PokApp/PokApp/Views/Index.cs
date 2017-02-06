@@ -14,6 +14,8 @@ namespace PokApp.Views
     {
         public Index()
         {
+            Title = "PokApp";
+            Padding = new Thickness(0, 20, 0, 0);
             var layout = new StackLayout();
 
             SearchBar busqueda = new SearchBar();
@@ -21,16 +23,19 @@ namespace PokApp.Views
             busqueda.SearchButtonPressed += async (sender, e) =>
             {
                 Pokemon pokemon = await Busqueda_Pokemon(busqueda.Text);
-                
 
-                if (pokemon != null)
+                try
                 {
                     dibujarPokemon(layout, pokemon);
+                }
+                catch (Exception)
+                {
+                    await DisplayAlert("Oh oh!", "no se encotro un Pokemon con ese nombre", "volver"); throw;
                 }
 
             };
 
-            Content = layout;
+            Content = new ScrollView { Content = layout };
         }
 
         private async Task<Pokemon> Busqueda_Pokemon(string pokeNombre)
@@ -39,11 +44,6 @@ namespace PokApp.Views
 
             Pokemon pokeResult = await pokManager.searchPokemon(pokeNombre);
 
-            if ( pokeResult == null )
-            {
-                await DisplayAlert("Oh oh!", "no se encotro un Pokemon con ese nombre", "volver");
-                return null;
-            }
 
             return pokeResult;
         }
@@ -71,8 +71,18 @@ namespace PokApp.Views
                 Text = pokemon.Descripcion,
                 FontAttributes =  FontAttributes.Italic,
             };
+
+            Image sprite = new Image
+            {
+                Source = new Uri(pokemon.Sprite),
+                Aspect = Aspect.AspectFit,
+                VerticalOptions = LayoutOptions.CenterAndExpand,
+
+            };
+
             layout.Children.Add(pokeId);
             layout.Children.Add(nombre);
+            layout.Children.Add(sprite);
             layout.Children.Add(descripcion);
         }
 

@@ -31,7 +31,15 @@ namespace PokApp.Model
             get { return descripcion; }
             set { descripcion = value; }
         }
-        
-             
+
+        private string sprite;
+
+        public string Sprite
+        {
+            get { return sprite; }
+            set { sprite = value; }
+        }
+
+
     }
 }
