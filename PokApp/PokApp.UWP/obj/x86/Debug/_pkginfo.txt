@@ -1,0 +1,1 @@
+C:\Users\bcariaga\documents\visual studio 2015\Projects\PokApp\PokApp\PokApp.UWP\AppPackages\PokApp.UWP_0.1.0.0_x86_Debug_Test\PokApp.UWP_0.1.0.0_x86_Debug.appx

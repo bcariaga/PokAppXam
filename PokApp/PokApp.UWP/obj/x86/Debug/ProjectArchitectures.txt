@@ -1,0 +1,2 @@
+C:\Users\bcariaga\documents\visual studio 2015\Projects\PokApp\PokApp\PokApp.UWP\PokApp.UWP.csproj;x86
+C:\Users\bcariaga\documents\visual studio 2015\Projects\PokApp\PokApp\PokApp\PokApp.csproj;neutral
