@@ -1,6 +1,10 @@
 <XamlCompilerSaveState>
   <ReferenceAssemblyList>
-    <ReferenceAssembly PathName="c:\users\bcariaga\documents\visual studio 2015\projects\pokapp\pokapp\pokapp\bin\debug\pokapp.dll" HashGuid="1989d56d-c3b4-af9c-e537-a7aa3050b30c" />
+    <LocalAssembly PathName="c:\users\bcariaga\documents\visual studio 2015\projects\pokapp\pokapp\pokapp.winphone\obj\debug\intermediatexaml\pokapp.winphone.exe" HashGuid="9ea14b09-1706-6a3a-c196-da8a52348acb" />
+    <ReferenceAssembly PathName="c:\users\bcariaga\documents\visual studio 2015\projects\pokapp\packages\dotnetcross.memory.unsafe.0.2.2\lib\dotnet\dotnetcross.memory.unsafe.dll" HashGuid="8565fce5-7d58-2a77-986d-0f57adb6deaa" />
+    <ReferenceAssembly PathName="c:\users\bcariaga\documents\visual studio 2015\projects\pokapp\pokapp\pokapp\bin\debug\pokapp.dll" HashGuid="c8a12cfc-cbc1-954f-843d-4524ec03af1a" />
+    <ReferenceAssembly PathName="c:\users\bcariaga\documents\visual studio 2015\projects\pokapp\packages\realm.0.82.1\lib\portable-net45+sl5+wp8+wpa81+win8+monoandroid+xamarin.ios10+monotouch+xamarin.mac\realm.dll" HashGuid="8268ec21-04c2-ca71-8838-c8d691bd7b71" />
+    <ReferenceAssembly PathName="c:\users\bcariaga\documents\visual studio 2015\projects\pokapp\packages\remotion.linq.2.1.1\lib\portable-net45+win+wpa81+wp80\remotion.linq.dll" HashGuid="b291f2b1-0e49-1308-a76b-8ad97045355e" />
     <ReferenceAssembly PathName="c:\users\bcariaga\documents\visual studio 2015\projects\pokapp\packages\xamarin.forms.2.3.3.180\lib\wpa81\xamarin.forms.core.dll" HashGuid="c782f70f-077f-7e2d-5bd4-f6b5da067f8a" />
     <ReferenceAssembly PathName="c:\users\bcariaga\documents\visual studio 2015\projects\pokapp\packages\xamarin.forms.2.3.3.180\lib\wpa81\xamarin.forms.platform.dll" HashGuid="6b938cd4-44c0-2618-7eb6-4caa3f482076" />
     <ReferenceAssembly PathName="c:\users\bcariaga\documents\visual studio 2015\projects\pokapp\packages\xamarin.forms.2.3.3.180\lib\wpa81\xamarin.forms.platform.winrt.dll" HashGuid="fe4acc44-27ba-0e4e-a08b-26ae7dccb678" />

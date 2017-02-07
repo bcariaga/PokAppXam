@@ -45,37 +45,27 @@ namespace PokApp.ViewModel
             return pokemon;
         }
 
-        //private Pokemon searchPokemonInternal(string searchTerm)
-        //{
-        //    var real = Realm.GetInstance();
-
-        //    Pokemon pokeResult =  real.All<Pokemon>().Where(p => p.Name == searchTerm ).First();
-            
-        //    return pokeResult;
-        //}
         public async Task<Pokemon> searchPokemon(string searchTerm) {
-
-            var realm = Realm.GetInstance();
-            Pokemon pokeResult = new Pokemon();
 
             try
             {
-                pokeResult = realm.All<Pokemon>().Where(p => p.Name == searchTerm).First();
+                var realm = Realm.GetInstance();
             }
-            catch (System.Exception)
+            catch (System.Exception e)
             {
-
-                pokeResult = await searchPokemonExternal(searchTerm);
-
-                using (var transaction = realm.BeginWrite())
-                {
-                    realm.Add(pokeResult);
-                    transaction.Commit();
-                }
+                var error = e;
+                
             }
-            
-            //if (pokeResult == null)
+            Pokemon pokeResult = new Pokemon();
+            pokeResult = await searchPokemonExternal(searchTerm);
+
+            //try
             //{
+            //    pokeResult = realm.All<Pokemon>().Where(p => p.Name == searchTerm).First();
+            //}
+            //catch (System.Exception)
+            //{
+
             //    pokeResult = await searchPokemonExternal(searchTerm);
 
             //    using (var transaction = realm.BeginWrite())
@@ -84,6 +74,8 @@ namespace PokApp.ViewModel
             //        transaction.Commit();
             //    }
             //}
+
+
 
             return pokeResult;
         }

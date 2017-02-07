@@ -1,0 +1,13 @@
+C:\Users\bcariaga\Documents\Visual Studio 2015\Projects\PokApp\PokApp\PokApp.WinPhone\obj\Debug\PokApp.WinPhone.csprojResolveAssemblyReference.cache
+C:\Users\bcariaga\Documents\Visual Studio 2015\Projects\PokApp\PokApp\PokApp.WinPhone\obj\Debug\App.g.i.cs
+C:\Users\bcariaga\Documents\Visual Studio 2015\Projects\PokApp\PokApp\PokApp.WinPhone\obj\Debug\App.g.cs
+C:\Users\bcariaga\Documents\Visual Studio 2015\Projects\PokApp\PokApp\PokApp.WinPhone\obj\Debug\MainPage.g.i.cs
+C:\Users\bcariaga\Documents\Visual Studio 2015\Projects\PokApp\PokApp\PokApp.WinPhone\obj\Debug\MainPage.g.cs
+C:\Users\bcariaga\Documents\Visual Studio 2015\Projects\PokApp\PokApp\PokApp.WinPhone\obj\Debug\XamlTypeInfo.g.cs
+C:\Users\bcariaga\Documents\Visual Studio 2015\Projects\PokApp\PokApp\PokApp.WinPhone\obj\Debug\App.xaml
+C:\Users\bcariaga\Documents\Visual Studio 2015\Projects\PokApp\PokApp\PokApp.WinPhone\obj\Debug\MainPage.xaml
+C:\Users\bcariaga\Documents\Visual Studio 2015\Projects\PokApp\PokApp\PokApp.WinPhone\obj\Debug\App.xbf
+C:\Users\bcariaga\Documents\Visual Studio 2015\Projects\PokApp\PokApp\PokApp.WinPhone\obj\Debug\MainPage.xbf
+C:\Users\bcariaga\Documents\Visual Studio 2015\Projects\PokApp\PokApp\PokApp.WinPhone\obj\Debug\XamlSaveStateFile.xml
+C:\Users\bcariaga\Documents\Visual Studio 2015\Projects\PokApp\PokApp\PokApp.WinPhone\obj\Debug\PokApp.WinPhone.exe
+C:\Users\bcariaga\Documents\Visual Studio 2015\Projects\PokApp\PokApp\PokApp.WinPhone\obj\Debug\PokApp.WinPhone.pdb

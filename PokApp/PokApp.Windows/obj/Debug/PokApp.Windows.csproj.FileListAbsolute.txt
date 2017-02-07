@@ -1,0 +1,11 @@
+C:\Users\bcariaga\Documents\Visual Studio 2015\Projects\PokApp\PokApp\PokApp.Windows\obj\Debug\PokApp.Windows.csprojResolveAssemblyReference.cache
+C:\Users\bcariaga\Documents\Visual Studio 2015\Projects\PokApp\PokApp\PokApp.Windows\obj\Debug\App.g.i.cs
+C:\Users\bcariaga\Documents\Visual Studio 2015\Projects\PokApp\PokApp\PokApp.Windows\obj\Debug\App.g.cs
+C:\Users\bcariaga\Documents\Visual Studio 2015\Projects\PokApp\PokApp\PokApp.Windows\obj\Debug\MainPage.g.i.cs
+C:\Users\bcariaga\Documents\Visual Studio 2015\Projects\PokApp\PokApp\PokApp.Windows\obj\Debug\MainPage.g.cs
+C:\Users\bcariaga\Documents\Visual Studio 2015\Projects\PokApp\PokApp\PokApp.Windows\obj\Debug\XamlTypeInfo.g.cs
+C:\Users\bcariaga\Documents\Visual Studio 2015\Projects\PokApp\PokApp\PokApp.Windows\obj\Debug\App.xaml
+C:\Users\bcariaga\Documents\Visual Studio 2015\Projects\PokApp\PokApp\PokApp.Windows\obj\Debug\MainPage.xaml
+C:\Users\bcariaga\Documents\Visual Studio 2015\Projects\PokApp\PokApp\PokApp.Windows\obj\Debug\App.xbf
+C:\Users\bcariaga\Documents\Visual Studio 2015\Projects\PokApp\PokApp\PokApp.Windows\obj\Debug\MainPage.xbf
+C:\Users\bcariaga\Documents\Visual Studio 2015\Projects\PokApp\PokApp\PokApp.Windows\obj\Debug\XamlSaveStateFile.xml
