@@ -2,12 +2,16 @@
 using PokApp.Model;
 using System.Net.Http;
 using System.Threading.Tasks;
+using Realms;
+using System.Linq;
+using System.Collections.Generic;
 
 namespace PokApp.ViewModel
 {
     public class PokManager 
     {
-        public async Task<Pokemon> searchPokemon(string searchTerm) {
+        private async Task<Pokemon> searchPokemonExternal(string searchTerm)
+        {
 
             HttpClient client = new HttpClient();
 
@@ -40,5 +44,59 @@ namespace PokApp.ViewModel
             }
             return pokemon;
         }
+
+        //private Pokemon searchPokemonInternal(string searchTerm)
+        //{
+        //    var real = Realm.GetInstance();
+
+        //    Pokemon pokeResult =  real.All<Pokemon>().Where(p => p.Name == searchTerm ).First();
+            
+        //    return pokeResult;
+        //}
+        public async Task<Pokemon> searchPokemon(string searchTerm) {
+
+            var realm = Realm.GetInstance();
+            Pokemon pokeResult = new Pokemon();
+
+            try
+            {
+                pokeResult = realm.All<Pokemon>().Where(p => p.Name == searchTerm).First();
+            }
+            catch (System.Exception)
+            {
+
+                pokeResult = await searchPokemonExternal(searchTerm);
+
+                using (var transaction = realm.BeginWrite())
+                {
+                    realm.Add(pokeResult);
+                    transaction.Commit();
+                }
+            }
+            
+            //if (pokeResult == null)
+            //{
+            //    pokeResult = await searchPokemonExternal(searchTerm);
+
+            //    using (var transaction = realm.BeginWrite())
+            //    {
+            //        realm.Add(pokeResult);
+            //        transaction.Commit();
+            //    }
+            //}
+
+            return pokeResult;
+        }
+
+        public List<Pokemon> GetAllInternal() {
+
+            var realm = Realm.GetInstance();
+
+            List < Pokemon > pokeList = (List<Pokemon>) realm.All<Pokemon>();
+
+            return pokeList;
+
+        }
+
     }
 }

@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Realms;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,40 +7,16 @@ using System.Threading.Tasks;
 
 namespace PokApp.Model
 {
-    public class Pokemon
+    public class Pokemon : RealmObject
     {
-        private int id;
+        [PrimaryKey]
+        public int Id { get; set; }
 
-        public int Id
-        {
-            get { return id; }
-            set { id = value; }
-        }
+        public string Name { get; set; }
 
-        private string name;
+        public string Descripcion { get; set; }
 
-        public string Name
-        {
-            get { return name; }
-            set { name = value; }
-        }
-
-        private string descripcion;
-
-        public string Descripcion
-        {
-            get { return descripcion; }
-            set { descripcion = value; }
-        }
-
-        private string sprite;
-
-        public string Sprite
-        {
-            get { return sprite; }
-            set { sprite = value; }
-        }
-
-
+        public string Sprite { get; set; }
+        
     }
 }
